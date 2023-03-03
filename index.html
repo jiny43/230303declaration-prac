@@ -39,13 +39,14 @@
     }
     }
 
-    // twoArrayDOMstyling(ulStyleObject,ulstyleValue,makeUl);
+    twoArrayDOMstyling(ulStyleObject,ulstyleValue,makeUl);
 
     function oneObjectDOMstyling(object){
         for(let i =0; i <object.firstArray.lenght; i++){
             object.element.style[object.firstArray[i]] = object.secondArray[i];
     }
     }
+    oneObjectDOMstyling(domStyle);
 //일단 쓰고 패턴을 찾고 랩핑이 가능한가?
 //리터럴을 걷어 냄
 </script>
