@@ -27,13 +27,25 @@
     // for(let i =0; i <ulStyleObject.lenght; i++){
     //     makeUl.style[ulStyleObject[i]] = ulstyleValue[i];
 
+    let domStyle = {
+        firstArray : ["width", "height","border"],
+        secondArray: ["100px","100px","1px solid black"],
+        element : root.children[0]
+
+    }
     function twoArrayDOMstyling(firstArray,secondArray,element){
         for(let i =0; i <firstArray.lenght; i++){
-        melement.style[firstArray[i]] = secondArray[i];
+        element.style[firstArray[i]] = secondArray[i];
     }
     }
 
-    twoArrayDOMstyling(ulStyleObject,ulstyleValue,makeUl);
+    // twoArrayDOMstyling(ulStyleObject,ulstyleValue,makeUl);
 
-
+    function oneObjectDOMstyling(object){
+        for(let i =0; i <object.firstArray.lenght; i++){
+            object.element.style[object.firstArray[i]] = object.secondArray[i];
+    }
+    }
+//일단 쓰고 패턴을 찾고 랩핑이 가능한가?
+//리터럴을 걷어 냄
 </script>
